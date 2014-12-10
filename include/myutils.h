@@ -5,7 +5,7 @@
 ** Login   <poirie-n@epitech.net>
 ** 
 ** Started on  Wed Dec 10 13:15:10 2014 Nathan Poirier
-** Last update Wed Dec 10 13:52:09 2014 Nathan Poirier
+** Last update Wed Dec 10 14:21:55 2014 Nathan Poirier
 */
 
 #ifndef MYUTILS_H_
@@ -30,5 +30,11 @@ size_t	my_putstr(char *str);
 ** my_strlen.c
 */
 size_t	my_strlen(char *str);
+
+/*
+** my_strcmp.c
+**/
+int	my_strcmp(char *s1, char *s2);
+int	my_strncmp(char *s1, char *s2, size_t n);
 
 #endif /* !MYUTILS_H_ */

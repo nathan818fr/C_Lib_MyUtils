@@ -5,14 +5,15 @@
 ## Login   <poirie-n@epitech.net>
 ## 
 ## Started on  Wed Dec 10 13:08:35 2014 Nathan Poirier
-## Last update Wed Dec 10 13:42:21 2014 Nathan Poirier
+## Last update Wed Dec 10 14:22:06 2014 Nathan Poirier
 ##
 
 NAME	= libmyutils.a
 
 SRCS	= my_putchar.c			\
 	  my_putstr.c			\
-	  my_strlen.c
+	  my_strlen.c			\
+	  my_strcmp.c
 
 OBJS	= $(addprefix src/, $(SRCS:.c=.o))
 
