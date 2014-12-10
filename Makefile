@@ -5,18 +5,19 @@
 ## Login   <poirie-n@epitech.net>
 ## 
 ## Started on  Wed Dec 10 13:08:35 2014 Nathan Poirier
-## Last update Wed Dec 10 13:12:33 2014 Nathan Poirier
+## Last update Wed Dec 10 13:33:31 2014 Nathan Poirier
 ##
 
 NAME	= libmyutils.a
 
-SRCS	= 
+SRCS	= my_putchar.c
 
 OBJS	= $(addprefix src/, $(SRCS:.c=.o))
 
 CC	= gcc
 
-CFLAGS	=
+CFLAGS	+= -O3
+CFLAGS	+= -Iinclude/
 
 LDFLAGS	=
 
