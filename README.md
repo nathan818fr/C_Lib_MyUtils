@@ -10,7 +10,7 @@ Just run `make`, that will create "libmyutils.a" !
 Put "libmyutils.a" in your library folder.
 
 > mkdir lib<br>
-mv <Path to libmyutils.a> lib/
+mv path/to/libmyutils.a lib/
 
 
 Indicate to "gcc" to compile the with library.
