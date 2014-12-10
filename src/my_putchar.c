@@ -5,7 +5,7 @@
 ** Login   <poirie-n@epitech.net>
 ** 
 ** Started on  Wed Dec 10 13:16:34 2014 Nathan Poirier
-** Last update Wed Dec 10 13:32:36 2014 Nathan Poirier
+** Last update Wed Dec 10 13:49:06 2014 Nathan Poirier
 */
 
 #include "myutils.h"
@@ -17,7 +17,7 @@
 **  On success, the number of bytes written is returned.
 **  On error, -1 is returned and errno is set appropriately.
 */
-ssize_t	my_putchar_to(char c, int fd)
+ssize_t	my_putchar_to(int fd, char c)
 {
   return (write(fd, &c, 1));
 }

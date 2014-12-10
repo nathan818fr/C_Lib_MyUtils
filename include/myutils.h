@@ -5,7 +5,7 @@
 ** Login   <poirie-n@epitech.net>
 ** 
 ** Started on  Wed Dec 10 13:15:10 2014 Nathan Poirier
-** Last update Wed Dec 10 13:32:37 2014 Nathan Poirier
+** Last update Wed Dec 10 13:52:09 2014 Nathan Poirier
 */
 
 #ifndef MYUTILS_H_
@@ -17,7 +17,18 @@
 /*
 ** my_putchar.c
 */
-ssize_t	my_putchar_to(char c, int fd);
+ssize_t	my_putchar_to(int fd, char c);
 ssize_t	my_putchar(char c);
+
+/*
+** my_putstr.c
+*/
+size_t	my_putstr_to(int fd, char *str);
+size_t	my_putstr(char *str);
+
+/*
+** my_strlen.c
+*/
+size_t	my_strlen(char *str);
 
 #endif /* !MYUTILS_H_ */
