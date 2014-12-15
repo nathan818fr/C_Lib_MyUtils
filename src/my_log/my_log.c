@@ -5,7 +5,7 @@
 ** Login   <poirie-n@epitech.net>
 ** 
 ** Started on  Mon Dec 15 15:33:57 2014 Nathan Poirier
-** Last update Mon Dec 15 17:39:09 2014 Nathan Poirier
+** Last update Mon Dec 15 17:43:26 2014 Nathan Poirier
 */
 
 #include <stdlib.h>
@@ -42,9 +42,9 @@ int	_my_log_exec(t_my_logtype type, char *msg, va_list ap)
 
   if (MYUTILS_OPT_PROGRAMNAME != NULL)
     format = my_strjoin(MYUTILS_OPT_PROGRAMNAME, ": ",
-			_my_log_get_prefix(type), ": ", msg, ".\n");
+			_my_log_get_prefix(type), ": ", msg, "\n");
   else
-    format = my_strjoin(_my_log_get_prefix(type), ": ", msg, ".\n");
+    format = my_strjoin(_my_log_get_prefix(type), ": ", msg, "\n");
   if (format == NULL)
     return (_my_log_fatal());
   if (my_vfprintf(STDERR_FILENO, format, ap) == -1)

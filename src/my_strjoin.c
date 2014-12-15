@@ -5,7 +5,7 @@
 ** Login   <poirie-n@epitech.net>
 ** 
 ** Started on  Mon Dec 15 16:09:48 2014 Nathan Poirier
-** Last update Mon Dec 15 17:08:20 2014 Nathan Poirier
+** Last update Mon Dec 15 17:43:54 2014 Nathan Poirier
 */
 
 #include <stdlib.h>
@@ -33,6 +33,7 @@ int		_my_strnjoin_append(char **str, int *str_size,
   nstr[i] = '\0';
   free(*str);
   *str = nstr;
+  *str_size = *str_size + argstr_size;
   return (0);
 }
 
