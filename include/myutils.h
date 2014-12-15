@@ -5,7 +5,7 @@
 ** Login   <poirie-n@epitech.net>
 ** 
 ** Started on  Wed Dec 10 13:15:10 2014 Nathan Poirier
-** Last update Mon Dec 15 16:08:32 2014 Nathan Poirier
+** Last update Mon Dec 15 16:50:17 2014 Nathan Poirier
 */
 
 #ifndef MYUTILS_H_
@@ -54,7 +54,10 @@ long	my_atol(char *str);
 /*
 ** my_strjoin.c
 */
-char	*my_strjoin(char *s1, ...);
+# define MY_NARGS_SEQ(_1, _2, _3, _4, _5, _6, _7, _8, _9, N, ...) N
+# define MY_NARGS(...) MY_NARGS_SEQ(__VA_ARGS__, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0)
+# define my_strjoin(...) my_strnjoin(MY_NARGS(__VA_ARGS__), __VA_ARGS__)
+char	*my_strnjoin(int n, ...);
 
 /*
 ** my_strerror.c

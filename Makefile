@@ -5,7 +5,7 @@
 ## Login   <poirie-n@epitech.net>
 ## 
 ## Started on  Wed Dec 10 13:08:35 2014 Nathan Poirier
-## Last update Mon Dec 15 16:11:20 2014 Nathan Poirier
+## Last update Mon Dec 15 16:41:34 2014 Nathan Poirier
 ##
 
 NAME	= libmyutils.a
@@ -30,7 +30,7 @@ OBJS	= $(addprefix src/, $(SRCS:.c=.o))
 CC	= gcc
 
 CFLAGS	+= -O3
-CFLAGS	+= -W -Wall -Wextra -Werror -Wno-unused-parameter
+CFLAGS	+= -W -Wall -Wextra -Werror -Wno-unused-parameter -Wno-variadic-macros
 CFLAGS	+= -ansi -pedantic
 CFLAGS	+= -Iinclude/
 
