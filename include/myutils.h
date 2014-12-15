@@ -5,7 +5,7 @@
 ** Login   <poirie-n@epitech.net>
 ** 
 ** Started on  Wed Dec 10 13:15:10 2014 Nathan Poirier
-** Last update Mon Dec 15 16:50:17 2014 Nathan Poirier
+** Last update Mon Dec 15 17:21:00 2014 Nathan Poirier
 */
 
 #ifndef MYUTILS_H_
@@ -78,6 +78,15 @@ int	my_vsprintf(char *str, const char *format, va_list ap);
 ** my_log/
 */
 void	my_log(char type, char *msg, ...);
+void	my_error(char *msg, ...);
+int	my_error_zero(char *msg, ...);
+void	*my_error_null(char *msg, ...);
+void	my_warn(char *msg, ...);
+int	my_warn_zero(char *msg, ...);
+void	*my_warn_null(char *msg, ...);
+void	my_info(char *msg, ...);
+int	my_info_zero(char *msg, ...);
+void	*my_info_null(char *msg, ...);
 
 #endif /* !MYUTILS_H_ */
 
