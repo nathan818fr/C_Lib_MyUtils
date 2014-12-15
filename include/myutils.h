@@ -5,7 +5,7 @@
 ** Login   <poirie-n@epitech.net>
 ** 
 ** Started on  Wed Dec 10 13:15:10 2014 Nathan Poirier
-** Last update Mon Dec 15 14:15:26 2014 Nathan Poirier
+** Last update Mon Dec 15 16:08:32 2014 Nathan Poirier
 */
 
 #ifndef MYUTILS_H_
@@ -14,6 +14,13 @@
 # include <stdio.h>
 # include <unistd.h>
 # include <stdarg.h>
+
+/*
+** Options
+*/
+# ifndef MYUTILS_OPT_PROGRAMNAME
+#  define MYUTILS_OPT_PROGRAMNAME NULL
+# endif
 
 /*
 ** my_putchar.c
@@ -45,6 +52,11 @@ int	my_atoi(char *str);
 long	my_atol(char *str);
 
 /*
+** my_strjoin.c
+*/
+char	*my_strjoin(char *s1, ...);
+
+/*
 ** my_strerror.c
 */
 char	*my_strerror(int errnum);
@@ -58,6 +70,11 @@ int	my_sprintf(char *str, const char *format, ...);
 int	my_vprintf(const char *format, va_list ap);
 int	my_vfprintf(int fd, const char *format, va_list ap);
 int	my_vsprintf(char *str, const char *format, va_list ap);
+
+/*
+** my_log/
+*/
+void	my_log(char type, char *msg, ...);
 
 #endif /* !MYUTILS_H_ */
 
