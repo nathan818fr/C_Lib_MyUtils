@@ -5,7 +5,7 @@
 ## Login   <poirie-n@epitech.net>
 ## 
 ## Started on  Wed Dec 10 13:08:35 2014 Nathan Poirier
-## Last update Sun Dec 14 15:51:09 2014 Nathan Poirier
+## Last update Mon Dec 15 14:14:41 2014 Nathan Poirier
 ##
 
 NAME	= libmyutils.a
@@ -15,13 +15,20 @@ SRCS	= my_putchar.c			\
 	  my_strlen.c			\
 	  my_strcmp.c			\
 	  my_atoi.c			\
-	  my_strerror.c
+	  my_strerror.c			\
+	  my_printf/my_printf.c		\
+	  my_printf/my_printf2.c	\
+	  my_printf/my_printf_flags1.c	\
+	  my_printf/my_printf_fct.c	\
+	  my_printf/my_printf_vfct.c
 
 OBJS	= $(addprefix src/, $(SRCS:.c=.o))
 
 CC	= gcc
 
 CFLAGS	+= -O3
+CFLAGS	+= -W -Wall -Wextra -Werror -Wno-unused-parameter
+CFLAGS	+= -ansi -pedantic
 CFLAGS	+= -Iinclude/
 
 LDFLAGS	=
