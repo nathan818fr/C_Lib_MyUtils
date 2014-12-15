@@ -5,7 +5,7 @@
 ** Login   <poirie-n@epitech.net>
 ** 
 ** Started on  Sun Dec 14 16:42:44 2014 Nathan Poirier
-** Last update Mon Dec 15 14:22:06 2014 Nathan Poirier
+** Last update Mon Dec 15 17:56:37 2014 Nathan Poirier
 */
 
 #include "myutils_printf.h"
@@ -61,9 +61,12 @@ void		_my_printf_free(t_my_printf *pf)
 int		_my_printf(int fd, char *str, const char *format, va_list ap)
 {
   t_my_printf	*pf;
+  int		r;
 
-  pf = _my_printf_init(fd, str);
+  if ((pf = _my_printf_init(fd, str)) == NULL)
+    return (-1);
   _my_printf_exec(pf, format, ap, 0);
+  r = pf->printed;
   _my_printf_free(pf);
-  return (pf->printed);
+  return (r);
 }
