@@ -5,7 +5,7 @@
 ** Login   <poirie-n@epitech.net>
 ** 
 ** Started on  Sun Dec 14 15:58:24 2014 Nathan Poirier
-** Last update Mon Dec 15 14:24:28 2014 Nathan Poirier
+** Last update Mon Dec 15 14:37:54 2014 Nathan Poirier
 */
 
 #ifndef MYUTILS_PRINTF_H_
@@ -32,6 +32,7 @@ void	_my_printf_exec(t_my_printf *pf, const char *format,
 			va_list ap, int i);
 
 int	_my_printf_putchar(t_my_printf *pf, char c);
+int	_my_printf_putstr(t_my_printf *pf, char *str);
 
 int     _my_printf_flag_perc(t_my_printf *arg, va_list ap);
 int     _my_printf_flag_c(t_my_printf *arg, va_list ap);
