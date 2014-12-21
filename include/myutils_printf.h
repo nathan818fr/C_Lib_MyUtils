@@ -5,7 +5,7 @@
 ** Login   <poirie-n@epitech.net>
 ** 
 ** Started on  Sun Dec 14 15:58:24 2014 Nathan Poirier
-** Last update Mon Dec 15 15:15:28 2014 Nathan Poirier
+** Last update Sun Dec 21 16:17:47 2014 Nathan Poirier
 */
 
 #ifndef MYUTILS_PRINTF_H_
@@ -26,6 +26,13 @@ typedef	struct	s_my_printf
   char		*str;
   int		printed;
 }		t_my_printf;
+
+int     my_printf(const char *format, ...);
+int     my_fprintf(int fd, const char *format, ...);
+int     my_sprintf(char *str, const char *format, ...);
+int     my_vprintf(const char *format, va_list ap);
+int     my_vfprintf(int fd, const char *format, va_list ap);
+int     my_vsprintf(char *str, const char *format, va_list ap);
 
 int	_my_printf(int fd, char *str, const char *format, va_list ap);
 void	_my_printf_exec(t_my_printf *pf, const char *format,

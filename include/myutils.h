@@ -5,7 +5,7 @@
 ** Login   <poirie-n@epitech.net>
 ** 
 ** Started on  Wed Dec 10 13:15:10 2014 Nathan Poirier
-** Last update Sun Dec 21 16:10:21 2014 Nathan Poirier
+** Last update Sun Dec 21 16:18:13 2014 Nathan Poirier
 */
 
 #ifndef MYUTILS_H_
@@ -64,36 +64,6 @@ char	*my_strnjoin(int n, ...);
 ** my_strerror.c
 */
 char	*my_strerror(int errnum);
-
-/*
-** my_printf/my_printf_[v]fct.c
-*/
-int	my_printf(const char *format, ...);
-int	my_fprintf(int fd, const char *format, ...);
-int	my_sprintf(char *str, const char *format, ...);
-int	my_vprintf(const char *format, va_list ap);
-int	my_vfprintf(int fd, const char *format, va_list ap);
-int	my_vsprintf(char *str, const char *format, va_list ap);
-
-/*
-** my_log/
-*/
-void	my_log(char type, char *msg, ...);
-void	my_error(char *msg, ...);
-int	my_error_zero(char *msg, ...);
-void	*my_error_null(char *msg, ...);
-void	my_warn(char *msg, ...);
-int	my_warn_zero(char *msg, ...);
-void	*my_warn_null(char *msg, ...);
-void	my_info(char *msg, ...);
-int	my_info_zero(char *msg, ...);
-void	*my_info_null(char *msg, ...);
-void	my_debug(char *msg, ...);
-int	my_debug_zero(char *msg, ...);
-void	*my_debug_null(char *msg, ...);
-void	my_trace(char *msg, ...);
-int	my_trace_zero(char *msg, ...);
-void	*my_trace_null(char *msg, ...);
 
 #endif /* !MYUTILS_H_ */
 

@@ -5,10 +5,11 @@
 ** Login   <poirie-n@epitech.net>
 ** 
 ** Started on  Mon Dec 15 15:33:57 2014 Nathan Poirier
-** Last update Mon Dec 15 17:43:26 2014 Nathan Poirier
+** Last update Sun Dec 21 16:18:50 2014 Nathan Poirier
 */
 
 #include <stdlib.h>
+#include "myutils_printf.h"
 #include "myutils_log.h"
 #include "myutils.h"
 
