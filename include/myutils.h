@@ -5,12 +5,13 @@
 ** Login   <poirie-n@epitech.net>
 ** 
 ** Started on  Wed Dec 10 13:15:10 2014 Nathan Poirier
-** Last update Mon Dec 15 18:02:47 2014 Nathan Poirier
+** Last update Sun Dec 21 16:10:21 2014 Nathan Poirier
 */
 
 #ifndef MYUTILS_H_
 # define MYUTILS_H_
 
+# include <stdlib.h>
 # include <stdio.h>
 # include <unistd.h>
 # include <stdarg.h>
