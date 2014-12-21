@@ -5,13 +5,13 @@
 ** Login   <poirie-n@epitech.net>
 ** 
 ** Started on  Sun Dec 21 15:58:15 2014 Nathan Poirier
-** Last update Sun Dec 21 16:14:29 2014 Nathan Poirier
+** Last update Sun Dec 21 16:30:47 2014 Nathan Poirier
 */
 
 #include "myutils_list.h"
 #include "myutils.h"
 
-t_my_list	*list_create()
+t_my_list	*my_list_create()
 {
   t_my_list	*list;
 
@@ -23,21 +23,17 @@ t_my_list	*list_create()
   return (list);
 }
 
-void		list_free(t_my_list *list)
+void		my_list_clean(t_my_list *list)
 {
-  t_my_listitem	*item;
-  t_my_listitem	*tmp;
-
   if (list)
     {
-      item = list->first;
-      while (item)
-	{
-	  tmp = item;
-	  item = item->next;
-	  free(tmp->data);
-	  free(tmp);
-	}
-      free(list);
+      while (list->first)
+	my_list_remove(list->first);
     }
+}
+
+void		my_list_free(t_my_list *list)
+{
+  my_list_clean(list);
+  free(list);
 }

@@ -5,7 +5,7 @@
 ## Login   <poirie-n@epitech.net>
 ## 
 ## Started on  Wed Dec 10 13:08:35 2014 Nathan Poirier
-## Last update Sun Dec 21 16:09:23 2014 Nathan Poirier
+## Last update Sun Dec 21 16:44:42 2014 Nathan Poirier
 ##
 
 NAME	= libmyutils.a
@@ -29,7 +29,8 @@ SRCS	= my_putchar.c			\
 	  my_log/my_log_info.c		\
 	  my_log/my_log_debug.c		\
 	  my_log/my_log_trace.c		\
-	  my_list/my_list.c
+	  my_list/my_list.c		\
+	  my_list/my_list_item.c
 
 OBJS	= $(addprefix src/, $(SRCS:.c=.o))
 
