@@ -5,7 +5,7 @@
 ** Login   <poirie-n@epitech.net>
 ** 
 ** Started on  Mon Jan  5 17:48:37 2015 Nathan Poirier
-** Last update Mon Jan  5 17:51:45 2015 Nathan Poirier
+** Last update Mon Jan  5 17:54:42 2015 Nathan Poirier
 */
 
 #include "myutils.h"
@@ -28,7 +28,7 @@ char	*my_strdup(char *str)
 {
   char	*nstr;
 
-  if ((nstr = malloc(my_strlen(str))) == NULL)
+  if ((nstr = malloc(my_strlen(str) + 1)) == NULL)
     return (NULL);
   my_strcpy(nstr, str);
   return (nstr);
