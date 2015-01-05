@@ -5,7 +5,7 @@
 ** Login   <poirie-n@epitech.net>
 ** 
 ** Started on  Wed Dec 10 13:15:10 2014 Nathan Poirier
-** Last update Sun Dec 21 16:18:13 2014 Nathan Poirier
+** Last update Mon Jan  5 17:51:02 2015 Nathan Poirier
 */
 
 #ifndef MYUTILS_H_
@@ -64,6 +64,12 @@ char	*my_strnjoin(int n, ...);
 ** my_strerror.c
 */
 char	*my_strerror(int errnum);
+
+/*
+** my_strcpy.c
+*/
+char	*my_strcpy(char *dest, char *src);
+char	*my_strdup(char *str);
 
 #endif /* !MYUTILS_H_ */
 

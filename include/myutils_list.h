@@ -5,7 +5,7 @@
 ** Login   <poirie-n@epitech.net>
 ** 
 ** Started on  Sun Dec 21 15:58:46 2014 Nathan Poirier
-** Last update Sun Dec 21 17:33:00 2014 Nathan Poirier
+** Last update Mon Dec 22 01:27:52 2014 Nathan Poirier
 */
 
 #ifndef MYUTILS_LIST_H_
