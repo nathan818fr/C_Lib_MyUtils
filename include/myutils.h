@@ -5,7 +5,7 @@
 ** Login   <poirie-n@epitech.net>
 ** 
 ** Started on  Wed Dec 10 13:15:10 2014 Nathan Poirier
-** Last update Mon Jan  5 17:51:02 2015 Nathan Poirier
+** Last update Wed Jan  7 14:17:06 2015 Nathan Poirier
 */
 
 #ifndef MYUTILS_H_
@@ -45,6 +45,7 @@ size_t	my_strlen(char *str);
 **/
 int	my_strcmp(char *s1, char *s2);
 int	my_strncmp(char *s1, char *s2, size_t n);
+int	my_str_startswith(char *s1, char *s2);
 
 /*
 ** my_atoi.c
@@ -71,5 +72,9 @@ char	*my_strerror(int errnum);
 char	*my_strcpy(char *dest, char *src);
 char	*my_strdup(char *str);
 
-#endif /* !MYUTILS_H_ */
+/*
+** my_getenv.c
+*/
+char	*my_getenv(char **env, char *name);
 
+#endif /* !MYUTILS_H_ */
