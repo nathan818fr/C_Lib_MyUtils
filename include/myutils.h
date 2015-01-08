@@ -5,7 +5,7 @@
 ** Login   <poirie-n@epitech.net>
 ** 
 ** Started on  Wed Dec 10 13:15:10 2014 Nathan Poirier
-** Last update Wed Jan  7 14:17:06 2015 Nathan Poirier
+** Last update Thu Jan  8 16:04:12 2015 Nathan Poirier
 */
 
 #ifndef MYUTILS_H_
@@ -76,5 +76,10 @@ char	*my_strdup(char *str);
 ** my_getenv.c
 */
 char	*my_getenv(char **env, char *name);
+
+/*
+** my_memset.c
+*/
+void	*my_memset(void *str, int c, size_t size);
 
 #endif /* !MYUTILS_H_ */
