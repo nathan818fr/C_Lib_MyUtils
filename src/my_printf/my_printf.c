@@ -5,7 +5,7 @@
 ** Login   <poirie-n@epitech.net>
 ** 
 ** Started on  Sun Dec 14 16:42:44 2014 Nathan Poirier
-** Last update Mon Dec 15 17:56:37 2014 Nathan Poirier
+** Last update Fri Jan  9 10:52:30 2015 Nathan Poirier
 */
 
 #include "myutils_printf.h"
@@ -20,6 +20,7 @@ char		*_my_printf_init_flags()
   tab[0] = '%';
   tab[1] = 'c';
   tab[2] = 's';
+  tab[3] = 'd';
   return (tab);
 }
 
@@ -32,6 +33,7 @@ t_printf_func	*_my_printf_init_funcs()
   tab[0] = (t_printf_func)&_my_printf_flag_perc;
   tab[1] = (t_printf_func)&_my_printf_flag_c;
   tab[2] = (t_printf_func)&_my_printf_flag_s;
+  tab[3] = (t_printf_func)&_my_printf_flag_d;
   return (tab);
 }
 

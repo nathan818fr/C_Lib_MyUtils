@@ -5,7 +5,7 @@
 ** Login   <poirie-n@epitech.net>
 ** 
 ** Started on  Sun Dec 14 15:58:24 2014 Nathan Poirier
-** Last update Sun Dec 21 16:20:57 2014 Nathan Poirier
+** Last update Fri Jan  9 10:52:56 2015 Nathan Poirier
 */
 
 #ifndef MYUTILS_PRINTF_H_
@@ -14,7 +14,7 @@
 # include <stdarg.h>
 # include <stdlib.h>
 
-# define MYUTILS_PRINTF_FLAGS 3
+# define MYUTILS_PRINTF_FLAGS 4
 
 typedef int	(*t_printf_func)(void *pf, va_list ap);
 
@@ -44,5 +44,6 @@ int	_my_printf_putstr(t_my_printf *pf, char *str);
 int     _my_printf_flag_perc(t_my_printf *arg, va_list ap);
 int     _my_printf_flag_c(t_my_printf *arg, va_list ap);
 int     _my_printf_flag_s(t_my_printf *arg, va_list ap);
+int	_my_printf_flag_d(t_my_printf *arg, va_list ap);
 
 #endif /* !MYUTILS_PRINTF_H_ */

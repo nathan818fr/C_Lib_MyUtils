@@ -5,7 +5,7 @@
 ## Login   <poirie-n@epitech.net>
 ## 
 ## Started on  Wed Dec 10 13:08:35 2014 Nathan Poirier
-## Last update Thu Jan  8 17:45:26 2015 Nathan Poirier
+## Last update Fri Jan  9 10:51:48 2015 Nathan Poirier
 ##
 
 NAME	= libmyutils.a
@@ -23,6 +23,7 @@ SRCS	= my_putchar.c			\
 	  my_printf/my_printf.c		\
 	  my_printf/my_printf2.c	\
 	  my_printf/my_printf_flags1.c	\
+	  my_printf/my_printf_flags_d.c	\
 	  my_printf/my_printf_utils.c	\
 	  my_printf/my_printf_fct.c	\
 	  my_printf/my_printf_vfct.c	\

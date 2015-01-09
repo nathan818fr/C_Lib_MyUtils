@@ -5,7 +5,7 @@
 ** Login   <poirie-n@epitech.net>
 ** 
 ** Started on  Sun Dec 14 16:39:31 2014 Nathan Poirier
-** Last update Mon Dec 15 14:41:02 2014 Nathan Poirier
+** Last update Fri Jan  9 10:51:16 2015 Nathan Poirier
 */
 
 #include <stdarg.h>
@@ -28,7 +28,7 @@ int		_my_printf_flag_c(t_my_printf *pf, va_list ap)
 
 int		_my_printf_flag_s(t_my_printf *pf, va_list ap)
 {
-  char  *str;
+  char		*str;
 
   str = va_arg(ap, char*);
   if (str == NULL)
