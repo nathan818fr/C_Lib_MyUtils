@@ -5,7 +5,7 @@
 ** Login   <poirie-n@epitech.net>
 ** 
 ** Started on  Sun Dec 14 15:58:24 2014 Nathan Poirier
-** Last update Fri Jan  9 10:52:56 2015 Nathan Poirier
+** Last update Fri Jan  9 11:15:09 2015 Nathan Poirier
 */
 
 #ifndef MYUTILS_PRINTF_H_
@@ -38,6 +38,7 @@ int	_my_printf(int fd, char *str, const char *format, va_list ap);
 void	_my_printf_exec(t_my_printf *pf, const char *format,
 			va_list ap, int i);
 
+int	_my_printf_putchar_at(t_my_printf *pf, char c, int pos);
 int	_my_printf_putchar(t_my_printf *pf, char c);
 int	_my_printf_putstr(t_my_printf *pf, char *str);
 

@@ -5,11 +5,20 @@
 ** Login   <poirie-n@epitech.net>
 ** 
 ** Started on  Mon Dec 15 14:22:58 2014 Nathan Poirier
-** Last update Mon Dec 15 14:36:57 2014 Nathan Poirier
+** Last update Fri Jan  9 11:14:37 2015 Nathan Poirier
 */
 
 #include "myutils_printf.h"
 #include "myutils.h"
+
+int	_my_printf_putchar_at(t_my_printf *pf, char c, int pos)
+{
+  if (pf->fd == -1)
+    pf->str[pf->printed + pos] = c;
+  else
+    write(pf->fd, &c, 1);
+  return (1);
+}
 
 int	_my_printf_putchar(t_my_printf *pf, char c)
 {
