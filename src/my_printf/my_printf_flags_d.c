@@ -5,7 +5,7 @@
 ** Login   <poirie-n@epitech.net>
 ** 
 ** Started on  Fri Jan  9 10:50:03 2015 Nathan Poirier
-** Last update Fri Jan  9 10:57:00 2015 Nathan Poirier
+** Last update Fri Jan  9 10:59:13 2015 Nathan Poirier
 */
 
 #include <stdarg.h>
@@ -28,10 +28,9 @@ int		_my_printf_flag_d(t_my_printf *pf, va_list ap)
   r = 0;
   nb = va_arg(ap, int);
   if (nb < 0)
-    {
-      r += _my_printf_putchar(pf, '-');
-      nb = -nb;
-    }
+    r += _my_printf_putchar(pf, '-');
+  else
+    nb = -nb;
   _my_printf_flag_d_put(pf, nb, &r);
   return (r);
 }
