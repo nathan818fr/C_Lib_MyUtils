@@ -5,7 +5,7 @@
 ** Login   <poirie-n@epitech.net>
 ** 
 ** Started on  Sun Dec 14 15:58:24 2014 Nathan Poirier
-** Last update Wed Jan 14 00:18:27 2015 Nathan Poirier
+** Last update Wed Jan 14 00:22:04 2015 Nathan Poirier
 */
 
 #ifndef MYUTILS_PRINTF_H_
@@ -13,6 +13,7 @@
 
 # include <stdarg.h>
 # include <stdlib.h>
+# include <errno.h>
 
 # define MYUTILS_PRINTF_FLAGS 5
 
