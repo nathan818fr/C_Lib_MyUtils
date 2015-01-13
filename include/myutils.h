@@ -5,7 +5,7 @@
 ** Login   <poirie-n@epitech.net>
 ** 
 ** Started on  Wed Dec 10 13:15:10 2014 Nathan Poirier
-** Last update Thu Jan  8 16:04:12 2015 Nathan Poirier
+** Last update Tue Jan 13 17:58:38 2015 Nathan Poirier
 */
 
 #ifndef MYUTILS_H_
@@ -22,6 +22,12 @@
 # ifndef MYUTILS_OPT_PROGRAMNAME
 #  define MYUTILS_OPT_PROGRAMNAME NULL
 # endif
+
+/*
+** MIN / MAX macros
+*/
+# define MY_MIN(a, b) (((a) < (b)) ? (a) : (b))
+# define MY_MAX(a, b) (((a) > (b)) ? (a) : (b))
 
 /*
 ** my_putchar.c
