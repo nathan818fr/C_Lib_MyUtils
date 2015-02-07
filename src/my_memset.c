@@ -5,7 +5,7 @@
 ** Login   <poirie-n@epitech.net>
 ** 
 ** Started on  Thu Jan  8 16:01:57 2015 Nathan Poirier
-** Last update Thu Jan  8 16:06:43 2015 Nathan Poirier
+** Last update Sat Feb  7 20:09:29 2015 Nathan Poirier
 */
 
 #include "myutils.h"
@@ -23,4 +23,19 @@ void		*my_memset(void *s, int c, size_t size)
       i++;
     }
   return (s);
+}
+
+void		*my_memcpy(void *dest, const void *src, size_t size)
+{
+  char		*d;
+  const char	*s;
+
+  d = (char *)dest;
+  s = (const char *)src;
+  while (size > 0)
+    {
+      *d++ = *s++;
+      size--;
+    }
+  return (dest);
 }
