@@ -5,7 +5,7 @@
 ** Login   <poirie-n@epitech.net>
 ** 
 ** Started on  Wed Dec 10 13:15:10 2014 Nathan Poirier
-** Last update Sat Feb  7 20:05:25 2015 Nathan Poirier
+** Last update Sat Feb 21 14:36:46 2015 Nathan Poirier
 */
 
 #ifndef MYUTILS_H_
@@ -28,6 +28,11 @@
 */
 # define MY_MIN(a, b) (((a) < (b)) ? (a) : (b))
 # define MY_MAX(a, b) (((a) > (b)) ? (a) : (b))
+
+/*
+** ABS macro
+*/
+# define MY_ABS(a) (((a) >= 0) ? (a) : (-(a)))
 
 /*
 ** my_putchar.c
