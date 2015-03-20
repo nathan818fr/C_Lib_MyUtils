@@ -5,7 +5,7 @@
 ** Login   <poirie-n@epitech.net>
 ** 
 ** Started on  Wed Dec 10 13:15:10 2014 Nathan Poirier
-** Last update Sat Feb 21 14:36:46 2015 Nathan Poirier
+** Last update Fri Mar 20 23:50:39 2015 Nathan Poirier
 */
 
 #ifndef MYUTILS_H_
@@ -56,7 +56,8 @@ size_t	my_strlen(char *str);
 **/
 int	my_strcmp(char *s1, char *s2);
 int	my_strncmp(char *s1, char *s2, size_t n);
-int	my_str_startswith(char *s1, char *s2);
+int	my_str_startswith(char *str, char *end);
+int	my_str_endswidth(char *str, char *start);
 
 /*
 ** my_atoi.c

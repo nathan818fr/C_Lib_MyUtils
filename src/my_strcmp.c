@@ -5,7 +5,7 @@
 ** Login   <poirie-n@epitech.net>
 ** 
 ** Started on  Wed Dec 10 14:15:06 2014 Nathan Poirier
-** Last update Wed Jan  7 14:53:37 2015 Nathan Poirier
+** Last update Fri Mar 20 23:50:05 2015 Nathan Poirier
 */
 
 #include "myutils.h"
@@ -44,12 +44,26 @@ int		my_strncmp(char *s1, char *s2, size_t n)
     i++;
   if (i < n)
     return (s1[i] - s2[i]);
+   return (0);
+}
+
+int		my_str_startswith(char *str, char *start)
+{
+  if (my_strncmp(str, start, my_strlen(start)) == 0)
+    return (1);
   return (0);
 }
 
-int		my_str_startswith(char *s1, char *s2)
+int		my_str_endswith(char *str, char *end)
 {
-  if (my_strncmp(s1, s2, my_strlen(s2)) == 0)
+  int		strlen;
+  int		endlen;
+
+  strlen = my_strlen(str);
+  endlen = my_strlen(end);
+  if (strlen < endlen)
+    return (0);
+  if (my_strncmp(str + strlen - endlen, end, endlen) == 0)
     return (1);
   return (0);
 }
