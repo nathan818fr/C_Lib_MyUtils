@@ -5,7 +5,7 @@
 ** Login   <poirie_n@epitech.net>
 ** 
 ** Started on  Tue May 19 18:50:34 2015 Nathan Poirier
-** Last update Tue May 19 22:08:40 2015 Nathan Poirier
+** Last update Tue May 19 23:50:41 2015 Nathan Poirier
 */
 
 #include "myutils.h"
@@ -25,6 +25,5 @@ void	my_databuf_free(t_databuf *db)
   if (db)
     {
       free(db->buf);
-      free(db);
     }
 }
