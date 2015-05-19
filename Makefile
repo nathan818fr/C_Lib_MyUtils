@@ -5,37 +5,41 @@
 ## Login   <poirie-n@epitech.net>
 ## 
 ## Started on  Wed Dec 10 13:08:35 2014 Nathan Poirier
-## Last update Sun Feb 22 02:12:28 2015 Nathan Poirier
+## Last update Tue May 19 21:32:03 2015 Nathan Poirier
 ##
 
 NAME	= libmyutils.a
 
-SRCS	= my_putchar.c			\
-	  my_putstr.c			\
-	  my_strlen.c			\
-	  my_strcmp.c			\
-	  my_atoi.c			\
-	  my_strjoin.c			\
-	  my_strerror.c			\
-	  my_strcpy.c			\
-	  my_getenv.c			\
-	  my_memset.c			\
-	  my_printf/my_printf.c		\
-	  my_printf/my_printf2.c	\
-	  my_printf/my_printf_flags1.c	\
-	  my_printf/my_printf_flags_d.c	\
-	  my_printf/my_printf_utils.c	\
-	  my_printf/my_printf_fct.c	\
-	  my_printf/my_printf_vfct.c	\
-	  my_log/my_log.c		\
-	  my_log/my_log_error.c		\
-	  my_log/my_log_warn.c		\
-	  my_log/my_log_info.c		\
-	  my_log/my_log_debug.c		\
-	  my_log/my_log_trace.c		\
-	  my_list/my_list.c		\
-	  my_list/my_list_item.c	\
-	  my_list/my_list_insert.c
+SRCS	= my_putchar.c				\
+	  my_putstr.c				\
+	  my_strlen.c				\
+	  my_strcmp.c				\
+	  my_atoi.c				\
+	  my_strjoin.c				\
+	  my_strerror.c				\
+	  my_strcpy.c				\
+	  my_getenv.c				\
+	  my_memset.c				\
+	  my_printf/my_printf.c			\
+	  my_printf/my_printf2.c		\
+	  my_printf/my_printf_flags1.c		\
+	  my_printf/my_printf_flags_d.c		\
+	  my_printf/my_printf_utils.c		\
+	  my_printf/my_printf_fct.c		\
+	  my_printf/my_printf_vfct.c		\
+	  my_log/my_log.c			\
+	  my_log/my_log_error.c			\
+	  my_log/my_log_warn.c			\
+	  my_log/my_log_info.c			\
+	  my_log/my_log_debug.c			\
+	  my_log/my_log_trace.c			\
+	  my_list/my_list.c			\
+	  my_list/my_list_item.c		\
+	  my_list/my_list_insert.c		\
+	  my_databuf/my_databuf.c		\
+	  my_databuf/my_databuf_append.c	\
+	  my_databuf/my_databuf_alloc.c		\
+	  my_databuf/my_databuf_remove.c
 
 OBJS	= $(addprefix src/, $(SRCS:.c=.o))
 
