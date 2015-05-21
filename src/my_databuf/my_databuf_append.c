@@ -5,7 +5,7 @@
 ** Login   <poirie_n@epitech.net>
 ** 
 ** Started on  Tue May 19 19:01:14 2015 Nathan Poirier
-** Last update Thu May 21 12:56:08 2015 Nathan Poirier
+** Last update Thu May 21 13:19:39 2015 Nathan Poirier
 */
 
 #include "myutils.h"
@@ -45,11 +45,15 @@ int		my_databuf_insert(t_databuf *db, char *buf, int len, int at)
       if (my_databuf_alloc(db, len) == -1)
 	return (-1);
     }
+  i = db->len - 1;
+  while (i >= at)
+    {
+      db->buf[i + len] = db->buf[i];
+      i--;
+    }
   i = 0;
   while (i < len)
     {
-      if (at + i < db->len)
-	db->buf[at + len + i] = db->buf[at + i];
       db->buf[at + i] = buf[i];
       i++;
     }
