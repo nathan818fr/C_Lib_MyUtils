@@ -5,7 +5,7 @@
 ** Login   <poirie_n@epitech.net>
 ** 
 ** Started on  Fri May 22 21:50:47 2015 Nathan Poirier
-** Last update Fri May 22 22:27:20 2015 Nathan Poirier
+** Last update Fri May 22 22:39:48 2015 Nathan Poirier
 */
 
 #include "myutils.h"
@@ -55,6 +55,8 @@ int	my_getnbr_base(int *nb, char *str, char *base, int baselen)
       if (i - 1 == 0 && str[0] == '-')
 	return (0);
     }
+  if (*nb == -2147483648)
+    return (-1);
   *nb = -*nb;
   return (0);
 }
