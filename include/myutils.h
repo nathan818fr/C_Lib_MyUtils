@@ -5,7 +5,7 @@
 ** Login   <poirie-n@epitech.net>
 ** 
 ** Started on  Wed Dec 10 13:15:10 2014 Nathan Poirier
-** Last update Fri Mar 20 23:52:44 2015 Nathan Poirier
+** Last update Fri May 22 22:31:05 2015 Nathan Poirier
 */
 
 #ifndef MYUTILS_H_
@@ -94,5 +94,11 @@ char	*my_getenv(char **env, char *name);
 */
 void	*my_memset(void *str, int c, size_t size);
 void	*my_memcpy(void *dest, const void *src, size_t size);
+
+/*
+** my_getnbr.c
+*/
+int	my_getnbr(int *nb, char *str);
+int	my_getnbr_base(int *nb, char *str, char *base, int baselen);
 
 #endif /* !MYUTILS_H_ */
