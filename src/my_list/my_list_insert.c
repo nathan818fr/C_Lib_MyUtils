@@ -5,7 +5,7 @@
 ** Login   <poirie-n@epitech.net>
 ** 
 ** Started on  Thu Jan  8 17:44:59 2015 Nathan Poirier
-** Last update Sat May 23 19:02:43 2015 Nathan Poirier
+** Last update Sat May 23 19:07:48 2015 Nathan Poirier
 */
 
 #include "myutils_list.h"
@@ -52,8 +52,8 @@ t_my_listitem	*my_list_insert(t_my_list *list, void *data, int pos)
     {
       if (pos < -list->size)
 	pos = 0;
-      else if (pos >= list->size)
-	pos = list->size - 1;
+      else if (pos > list->size)
+	pos = list->size;
       else if (pos < 0)
 	pos = list->size + pos + 1;
       if (pos == 0)
