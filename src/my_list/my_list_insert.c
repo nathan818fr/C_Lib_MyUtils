@@ -5,7 +5,7 @@
 ** Login   <poirie-n@epitech.net>
 ** 
 ** Started on  Thu Jan  8 17:44:59 2015 Nathan Poirier
-** Last update Thu Jan  8 17:45:08 2015 Nathan Poirier
+** Last update Sat May 23 18:52:18 2015 Nathan Poirier
 */
 
 #include "myutils_list.h"
@@ -26,6 +26,7 @@ void		_my_listitem_insert_at(t_my_list *list, t_my_listitem *item,
     }
   else
     {
+      item->prev = pos->prev;
       item->next = pos;
       pos->prev = item;
       if (pos == list->first)
